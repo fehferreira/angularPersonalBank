@@ -8,8 +8,10 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'personalbank';
+  transferencia: any;
 
   transfer($event){
     console.log($event);
+    this.transferencia = $event;
   }
 }
