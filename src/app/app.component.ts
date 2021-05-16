@@ -5,6 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = 'personalbank';
+  transferencia: any;
+
+  transfer($event){
+    console.log($event);
+    this.transferencia = $event;
+  }
 }
